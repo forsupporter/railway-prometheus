@@ -32,3 +32,7 @@ scrape_configs:
   #   scrape_interval: 5s
   #   static_configs:
   #     - targets: ['localhost:9104']
+
+  - job_name: 'mongodb'
+    static_configs:
+    - targets: ['mongo-exporter.railway.internal:9216']
